@@ -4,7 +4,7 @@ import React from 'react'
 const SectionHome = () => {
   
   return (
-    <div className='flex items-center max-w-screen-lg p-5 mx-auto md:max-w-screen-lg '>
+    <div className='flex items-center max-w-screen-lg p-5 mx-auto md:max-w-screen-lg ' id="home">
       <div className='flex flex-col items-center justify-center gap-5 text-center mt-36 md:flex'>
         <h4 className='text-xl'>Olá, seja bem vindo(a)</h4>
         <h3 className='text-lg md:text-sm'>PRECISANDO DE UM DEVELOPER <span className='text-lg font-bold md:text-sm'>FRONTEND / FULLSTACK</span></h3>

@@ -27,7 +27,7 @@ const Header = () => {
           </div>
         </Link>
         <Link
-          href={'/'}
+          href={'#expertises'}
           className="p-2 uppercase bg-transparent rounded hover:bg-primary"
         >
           EXPERTISES

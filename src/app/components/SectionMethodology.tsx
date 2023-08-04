@@ -4,7 +4,7 @@ import { BiLogoWhatsapp } from 'react-icons/bi';
 
 const SectionMethodology = () => {
   return (
-    <div className="container flex flex-col items-center justify-center gap-5 p-5 mx-auto text-left">
+    <div className="container flex flex-col items-center justify-center gap-5 p-5 mx-auto text-left" id="expertises">
       <div className='flex flex-col items-start justify-between p-5 md:flex-row'>
         <div className='flex flex-col w-full'>
           <h4 className="flex mb-5 text-sm font-bold md:text-xl">

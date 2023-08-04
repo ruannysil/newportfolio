@@ -7,7 +7,7 @@ import { BiLogoWhatsapp } from 'react-icons/bi';
 
 const SectionUser = () => {
   return (
-    <div className="container flex items-center justify-between p-5 mx-auto " id='home'>
+    <div className="container flex items-center justify-between p-5 mx-auto " id='about'>
       <div className="container flex flex-col items-center justify-center gap-5 mt-20 text-left">
         <div className="flex flex-col items-center justify-center gap-5 text-center mt-36 md:flex-row md:items-start md:text-left">
           <div className="container flex flex-col justify-center gap-5 p-5 text-left">
