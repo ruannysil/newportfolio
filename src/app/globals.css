@@ -25,3 +25,32 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+@media (max-width: 767px) {
+  #link-a {
+    top: 73rem;
+  }
+}
+
+@media (max-width: 425px) {
+  #link-a {
+    top: 76rem;
+    left: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  #link-a {
+    top: 77rem;
+    left: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  #link-a {
+    top: 79rem;
+    left: 1rem;
+  }
+}
+
