@@ -42,7 +42,7 @@ const Header = () => {
       <div className="flex items-center justify-between w-full md:hidden">
         <Link href={'/'}>
           <div className="w-[10]">
-            <Image src={'/logo.svg'} alt="logo" width={150} height={150} />
+            <Image src={'/Logo.svg'} alt="logo" width={150} height={150} />
           </div>
         </Link>
         <div><GiHamburgerMenu className="w-8 h-8"/></div>
