@@ -17,6 +17,7 @@ module.exports = {
         secundary: '#ad3708',
         customRed: '#EA012B',
         customOrange: '#FF4901',
+        bk: '#000000e0',
       }
     },
   },
