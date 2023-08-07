@@ -1,6 +1,8 @@
 import SectionHome from './components/SectionHome';
 import SectionMethodology from './components/SectionMethodology';
+import SectionProject from './components/SectionProject';
 import SectionUser from './components/SectionUser';
+
 
 export default function Home() {
   return (
@@ -8,6 +10,7 @@ export default function Home() {
       <SectionHome />
       <SectionUser />
       <SectionMethodology />
+      <SectionProject />
     </div>
   );
 }

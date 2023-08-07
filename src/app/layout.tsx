@@ -16,13 +16,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+
   return (
     <html lang="en">
       <body className={inter.className} style={{
-        backgroundImage: 'url(/bg.svg)',
-        backgroundRepeat: 'no-repeat',
+        backgroundImage: 'linear-gradient(to top, rgba(0, 0, 0, 0.979), rgba(0, 0, 0, 0.627)), url(/bg-gif.gif)',
+        backgroundSize: '100% 100vh',
         backgroundPosition: 'center',
-        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
       }}>
         <div className="flex flex-col h-screen">
           <div className="h-[94px]">
