@@ -55,7 +55,7 @@ const SectionUser = () => {
               alt="botao whatsapp"
               width={250}
               height={70.44}
-              className='md:w-[230px] md:h-[100px] z-[-1]'
+              className='md:w-[230px] md:h-[100px]'
             />
           </Link>
           <Image

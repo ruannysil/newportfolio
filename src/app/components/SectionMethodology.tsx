@@ -1,6 +1,11 @@
+'use client'
+
 import React from 'react';
 import Image from 'next/image';
 import { BiLogoWhatsapp } from 'react-icons/bi';
+import Link from 'next/link';
+
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 const SectionMethodology = () => {
   return (
@@ -61,13 +66,21 @@ const SectionMethodology = () => {
               e e-commerce, visando aprimorar a experiência do usuário e
               otimização do site.
             </p>
-            <div className="z-[-1]">
-            <button className="flex items-center mt-5">
-              <div className="w-8 h-8 mb-5 border-t-2 border-l-2 rotate-140 border-primary"></div>
-              <span className="px-4 uppercase ">venha conferir</span>
-              <div className="w-8 h-8 mt-5 rotate-90 border-t-2 border-r-2 border-primary"></div>
-            </button>
+            <div className="flex items-center justify-center">
+              <ScrollLink
+                to="project"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-70}
+                className="flex items-center mt-5 cursor-pointer hover:bg-primary"
+              >
+                <div className="w-8 h-8 mb-5 border-t-2 border-l-2 rotate-140 border-primary"></div>
+                <span className="uppercase md:px-4">venha conferir</span>
+                <div className="w-8 h-8 mt-5 rotate-90 border-t-2 border-r-2 border-primary"></div>
+              </ScrollLink>
             </div>
+
           </div>
 
           <div

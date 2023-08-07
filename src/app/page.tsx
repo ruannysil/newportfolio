@@ -2,6 +2,7 @@ import SectionHome from './components/SectionHome';
 import SectionMethodology from './components/SectionMethodology';
 import SectionProject from './components/SectionProject';
 import SectionUser from './components/SectionUser';
+import SectionSkillsAndConection from './components/SectionSkillsAndConection'
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <SectionUser />
       <SectionMethodology />
       <SectionProject />
+      <SectionSkillsAndConection />
     </div>
   );
 }

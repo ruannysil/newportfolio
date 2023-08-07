@@ -27,7 +27,7 @@ export default function RootLayout({
         backgroundRepeat: 'no-repeat',
       }}>
         <div className="flex flex-col h-screen">
-          <div className="h-[94px]">
+          <div className="h-[94px] z-[999]">
             <Header />
           </div>
           <div className="flex-1">{children}</div>

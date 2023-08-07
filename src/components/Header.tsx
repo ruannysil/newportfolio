@@ -33,10 +33,10 @@ const Header = () => {
   
   
   return (
-    <div className="flex items-center justify-center h-[120px] relative">
+    <div className="flex items-center justify-between h-[120px]">
       
-    <div className={`container flex items-center justify-between p-5  mx-auto max-w-screen-lg md:max-w-screen-lg ${isGlaseEffect ? 'bg-opacity-70 backdrop-blur-md' : 'bg-opacity-0 backdrop-blur-0'} fixed`}>
-      <div className="container items-center justify-around hidden p-5 py-0 mx-auto md:flex">
+    <div className={`container flex items-center  p-5  max-w-full ${isGlaseEffect ? 'bg-opacity-70 backdrop-blur-md' : 'bg-opacity-0 backdrop-blur-0'} fixed`}>
+      <div className="container items-center justify-center hidden p-5 py-0 mx-auto gap-[10%] md:flex">
         
       <ScrollLink
           to="home"
