@@ -13,7 +13,7 @@ const SectionMethodology = () => {
       className="container flex flex-col items-center justify-center gap-5 p-5 mx-auto text-left"
       id="expertises"
     >
-      <div className="flex flex-col items-start justify-between p-5 md:flex-row">
+      <div className="flex flex-col items-start justify-between md:flex-row">
         <div className="flex flex-col">
           <h4 className="mb-5 text-sm font-bold md:text-xl">
             ESPECIALISTAS E RESPONSÁVEL PELA CRIAÇÃO DE PROJETOS
@@ -31,10 +31,10 @@ const SectionMethodology = () => {
             funcionamento dos sites e proporcionar uma experiência eficiente
             para todos os usuários.
           </p>
-          <button className="w-[15rem] bg-primary mt-5 rounded-full p-1.5 flex items-center justify-center">
+          <Link href="https://acesse.one/zuq84" className="w-[15rem] bg-primary mt-5 rounded-full p-1.5 flex items-center justify-center">
             <BiLogoWhatsapp className="w-5 h-5" />
             <span className="ml-1 text-xs">Fale agora com um especialista</span>
-          </button>
+          </Link>
         </div>
         <div className="w-full md:w-[230px] ml-4 md:ml-0">
           <Image
@@ -48,7 +48,7 @@ const SectionMethodology = () => {
       </div>
 
       <div className="flex flex-col items-start justify-between md:max-w-[900px] md:flex-row">
-        <div className="flex flex-col items-start justify-between gap-5 p-9 md:flex-row">
+        <div className="flex flex-col items-start justify-between gap-5 md:flex-row">
           <div className="flex flex-col">
             <div className="w-full flex md:w-[230px] mb-1 place-items-end">
               <h4 className="mb-1 text-sm md:text-base">Apresentação</h4>

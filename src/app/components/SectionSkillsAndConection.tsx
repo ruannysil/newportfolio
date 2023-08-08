@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import ImageCode from '../../lib/imageCode'
 import Link from 'next/link'
+import { FaArrowRight } from 'react-icons/fa';
+import IconImg from '../../lib/imageCode'
 
 const SectionSkillsAndConection = () => {
   return (
@@ -21,18 +22,20 @@ const SectionSkillsAndConection = () => {
             <h3 className="mb-2 text-2xl font-bold md:text-4xl">Hard Skills</h3>
           </div>
           
-          <div className='grid grid-cols-1 gap-3 mx-2 mt-12em sm:grid-cols-3 lg:grid-cols-3'>
-            {ImageCode.map((imgcode) => (
-              <button key={imgcode.id} className="items-center justify-center px-4 py-2 rounded bg-secundaryDark hover:bg-gradient-linear drop-shadow-lg">
-              <Image  src={imgcode.image}
-                alt="html"
-                width={250}
-                height={70.44} />
-              </button>
-            ))}
+          <div className="grid grid-cols-2 gap-3 p-5 mx-2 mt-12em md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4" id="imgcode">
+              {IconImg.map((imgcode) => (
+                <button
+                  key={imgcode.id}
+                  className="flex items-center justify-between px-4 py-2 rounded bg-secundaryDark hover:bg-gradient-linear drop-shadow-lg"
+                >
+                  {React.createElement(imgcode.icon, { size: 30 })}
+                  <h2 className="text-sm">{imgcode.name}</h2>
+                  <FaArrowRight size={16} />
+                </button>
+              ))}
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-5 mt-4 text-center md:mt-36 md:text-center">
+          <div className="flex flex-col items-center justify-center gap-5 mt-4 text-center md:mt-36 md:text-center" id="networking">
               <Image  src={'/dk.svg'}
               alt="donk kong"
               width={100}
@@ -42,33 +45,40 @@ const SectionSkillsAndConection = () => {
             <h1 className="text-2xl font-bold uppercase md:text-4xl text-primary">vamos nos conectar</h1>
             <h1 className="w-11/12 text-sm md:w-8/12 md:text-sm">Aqui estão minhas redes sócias vamos conversar diretamente através delas e fazer networking</h1>
               
-            <div className="grid grid-cols-1 gap-3 mb-20 md:gap-5 sm:grid-cols-2 md:grid-cols-3">
-                <button className="items-center justify-center w-full px-4 py-2 rounded md:w-auto bg-secundaryDark hover:bg-gradient-linear">
+            <div className="grid grid-cols-1 gap-1 p-5 mb-20 md:gap-2 sm:grid-cols-2 md:grid-cols-3" id="imgLink">
+                <a href="https://www.linkedin.com/in/ruan-noleto-5587541aa/" target="_blank">
+                <button className="flex items-center justify-between w-full px-4 py-2 rounded bg-secundaryDark hover:bg-gradient-linear drop-shadow-lg">
                   <Image
                     src="/linkdin.svg"
-                    alt="donk kong"
-                    width={260}
+                    alt="linkdin"
+                    width={200}
                     height={70.44}
                   />
                 </button>
+                </a>
 
-                <button  className="items-center justify-center w-full px-4 py-2 rounded md:w-auto bg-secundaryDark hover:bg-gradient-linear">
+                <a href="https://www.instagram.com/ruan_noleto.dev/" target="_blank">
+                <button  className="flex items-center justify-between w-full px-4 py-2 rounded bg-secundaryDark hover:bg-gradient-linear drop-shadow-lg">
                   <Image
                     src="/instagram.svg"
-                    alt="donk kong"
-                    width={260}
+                    alt="instagram"
+                    width={200}
                     height={70.44}
                   />
                 </button>
+                </a>
 
-                <button className="items-center justify-center w-full px-4 py-2 rounded md:w-auto bg-secundaryDark hover:bg-gradient-linear">
+              <a href="https://github.com/ruannysil" target="_blank">
+                <button className="flex items-center justify-between w-full px-4 py-2 rounded bg-secundaryDark hover:bg-gradient-linear drop-shadow-lg">
+
                   <Image
                     src="/githubmario.svg"
-                    alt="donk kong"
-                    width={260}
+                    alt="github"
+                    width={200}
                     height={70.44}
-                  />
+                    />
                 </button>
+                </a>
           </div>
 
           </div>

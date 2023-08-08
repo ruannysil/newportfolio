@@ -1,65 +1,86 @@
-// lib/projetcArray.js
-const CodeImage = [
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaJs,
+  FaGithub,
+  FaNodeJs,
+  FaGitAlt,
+} from 'react-icons/fa';
+import {
+  SiStyledcomponents,
+  SiTailwindcss,
+  SiReact,
+  SiTypescript,
+} from 'react-icons/si';
+import {TbBrandVscode} from 'react-icons/tb'
+interface IconData {
+  id: number;
+  name: string;
+  icon: React.ComponentType<{ size: number }>;
+}
+
+const IconImg: IconData[] = [
   {
     id: 1,
-    name: 'html',
-    image: '/html.svg', 
+    name: 'Html 5',
+    icon: FaHtml5,
   },
   {
     id: 2,
-    name: 'css',
-    image: '/css.svg', 
+    name: 'Css 3',
+    icon: FaCss3Alt,
   },
   {
     id: 3,
-    name: 'styled-components',
-    image: '/stylec.svg', 
+    name: 'Styled-Comp',
+    icon: SiStyledcomponents,
   },
   {
     id: 4,
-    name: 'javaScript',
-    image: '/javas.svg', 
+    name: 'JavaScript',
+    icon: FaJs,
   },
   {
     id: 5,
-    name: 'tailwind css',
-    image: '/tailwindcss.svg', 
+    name: 'Tailwind Css',
+    icon: SiTailwindcss,
   },
   {
     id: 6,
-    name: 'react js',
-    image: '/reactjs.svg', 
+    name: 'React js',
+    icon: SiReact,
   },
   {
     id: 7,
-    name: 'react native',
-    image: '/reactnative.svg', 
+    name: 'React Native',
+    icon: SiReact,
   },
   {
     id: 8,
-    name: 'typescript',
-    image: '/typescript.svg', 
+    name: 'TypeScript',
+    icon: SiTypescript,
   },
   {
     id: 9,
-    name: 'git',
-    image: '/git.svg', 
+    name: 'Git',
+    icon: FaGitAlt,
   },
   {
     id: 10,
-    name: 'github',
-    image: '/github.svg', 
+    name: 'Github',
+    icon: FaGithub,
   },
   {
     id: 11,
-    name: 'vscode',
-    image: '/vscode.svg', 
+    name: 'Vscode',
+    icon: TbBrandVscode,
   },
   {
     id: 12,
-    name: 'nodejs',
-    image: '/nodejs.svg', 
+    name: 'Node Js',
+    icon: FaNodeJs,
   },
 ];
 
-export default CodeImage;
+export default IconImg;

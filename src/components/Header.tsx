@@ -33,7 +33,7 @@ const Header = () => {
   
   
   return (
-    <div className="flex items-center justify-between h-[120px]">
+    <div className="flex items-center justify-between h-[102px]">
       
     <div className={`container flex items-center  p-5  max-w-full ${isGlaseEffect ? 'bg-opacity-70 backdrop-blur-md' : 'bg-opacity-0 backdrop-blur-0'} fixed`}>
       <div className="container items-center justify-center hidden p-5 py-0 mx-auto gap-[10%] md:flex">
@@ -83,7 +83,7 @@ const Header = () => {
         </ScrollLink>
         
         <ScrollLink
-          to="contact"
+          to="networking"
           smooth={true}
           duration={500}
           spy={true}
@@ -91,7 +91,7 @@ const Header = () => {
           className="p-2 uppercase bg-transparent rounded cursor-pointer hover:bg-primary"
           onClick={handleLinkClick}
         >
-          contato
+          networking
         </ScrollLink>
 
       </div>
@@ -144,10 +144,10 @@ const Header = () => {
             className="p-2 uppercase bg-transparent rounded hover:bg-primary"
             onClick={handleLinkClick}
           >
-            EXPERTISES
+            expertises
           </ScrollLink>
           <ScrollLink
-            to="contact"
+            to="networking"
             smooth={true}
             duration={500}
             spy={true}
@@ -155,7 +155,7 @@ const Header = () => {
             className="p-2 uppercase bg-transparent rounded hover:bg-primary"
             onClick={handleLinkClick}
           >
-            contato
+            networking
           </ScrollLink>
           <button className="absolute top-0 right-0 mt-8 mr-8"
             onClick={() => setIsOpenMenu(false)}>
