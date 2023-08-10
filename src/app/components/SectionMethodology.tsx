@@ -31,10 +31,10 @@ const SectionMethodology = () => {
             funcionamento dos sites e proporcionar uma experiência eficiente
             para todos os usuários.
           </p>
-          <Link href="https://acesse.one/zuq84" className="w-[15rem] bg-primary mt-5 rounded-full p-1.5 flex items-center justify-center">
+          <a href="https://wa.me/5598987312479?text=Ol%C3%A1%2C+estou+interessado+em+seus+servi%C3%A7os.+Poderia+me+informar+qual+hor%C3%A1rio+voc%C3%AA+estar%C3%A1+dispon%C3%ADvel+para+agendarmos+uma+reuni%C3%A3o%3F" className="w-[15rem] bg-primary mt-5 rounded-full p-1.5 flex items-center justify-center" id="methodology" target='_blank'>
             <BiLogoWhatsapp className="w-5 h-5" />
             <span className="ml-1 text-xs">Fale agora com um especialista</span>
-          </Link>
+          </a>
         </div>
         <div className="w-full md:w-[230px] ml-4 md:ml-0">
           <Image
@@ -47,7 +47,7 @@ const SectionMethodology = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-start justify-between md:max-w-[900px] md:flex-row">
+      <div className="flex flex-col items-start justify-between md:max-w-[900px] md:flex-row" >
         <div className="flex flex-col items-start justify-between gap-5 md:flex-row">
           <div className="flex flex-col">
             <div className="w-full flex md:w-[230px] mb-1 place-items-end">
@@ -59,7 +59,7 @@ const SectionMethodology = () => {
                 height={260}
               />
             </div>
-            <h4 className="mb-5 font-bold text-sx ">METODOLOGIA DEVELOPER</h4>
+            <h4 className="mb-5 font-bold text-sx">METODOLOGIA DEVELOPER</h4>
             <hr className="h-1 border-1 border-[#FF4900] bg-primary rounded-lg w-20 mb-6" />
             <p className="text-sm max-w-[32rem]">
               Desenvolvimento especializado em criação de sites, páginas únicas

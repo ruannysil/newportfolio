@@ -33,7 +33,7 @@ const Header = () => {
   
   
   return (
-    <div className="flex items-center justify-between h-[102px]">
+    <div className="flex items-center justify-between h-[102px] sm:h-[90px]">
       
     <div className={`container flex items-center  p-5  max-w-full ${isGlaseEffect ? 'bg-opacity-70 backdrop-blur-md' : 'bg-opacity-0 backdrop-blur-0'} fixed`}>
       <div className="container items-center justify-center hidden p-5 py-0 mx-auto gap-[10%] md:flex">
@@ -44,10 +44,10 @@ const Header = () => {
           duration={500}
           spy={true}
           offset={-70}
-          className="p-2 uppercase bg-transparent rounded cursor-pointer hover:bg-primary"
+          className="p-2 uppercase bg-transparent rounded cursor-pointer hover:bg-primary sm:text-sm"
           onClick={handleLinkClick}
         >
-          home
+          inicio
         </ScrollLink>
 
         <ScrollLink
@@ -56,16 +56,16 @@ const Header = () => {
           duration={500}
           spy={true}
           offset={-70}
-          className="p-2 uppercase bg-transparent rounded cursor-pointer hover:bg-primary"
+          className="p-2 uppercase bg-transparent rounded cursor-pointer hover:bg-primary sm:text-sm"
           onClick={handleLinkClick}
         >
-          quem sou
+          sobre
         </ScrollLink>
 
         <Link href={'/'}>
 
           <div className="w-[10]">
-            <Image src={'/Logo.svg'} alt="logo" width={150} height={150} />
+            <Image src={'/Logocenter.svg'} alt="logo" width={150} height={150} />
           </div>
 
         </Link>
@@ -76,10 +76,10 @@ const Header = () => {
           duration={500}
           spy={true}
           offset={-70}
-          className="p-2 uppercase bg-transparent rounded cursor-pointer hover:bg-primary"
+          className="p-2 text-sm uppercase bg-transparent rounded cursor-pointer hover:bg-primary sm:text-sm"
           onClick={handleLinkClick}
         >
-         expertises
+         habilidades
         </ScrollLink>
         
         <ScrollLink
@@ -88,7 +88,7 @@ const Header = () => {
           duration={500}
           spy={true}
           offset={-70}
-          className="p-2 uppercase bg-transparent rounded cursor-pointer hover:bg-primary"
+          className="p-2 uppercase bg-transparent rounded cursor-pointer hover:bg-primary sm:text-sm"
           onClick={handleLinkClick}
         >
           networking

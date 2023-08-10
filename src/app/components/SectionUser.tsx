@@ -1,8 +1,12 @@
+'use client'
+
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GrInstagram, GrGithub } from 'react-icons/gr';
 import { RiLinkedinFill } from 'react-icons/ri';
+
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 
 const SectionUser = () => {
@@ -27,8 +31,8 @@ const SectionUser = () => {
               </Link>
             </div>
             <div className="flex gap-8 md:gap-6 md:ml-7">
-              <button className=" flex items-center justify-around pt-2 pb-2 pl-5 pr-5 mt-5 md:w-[150px] font-semibold rounded-lg text-cente bg-primary hover:bg-secundary">
-               <p className='text-xs md:text-sm'>Baixa CV</p>
+              <a href="/Ruan Noleto.pdf" className=" flex items-center justify-around pt-2 pb-2 pl-5 pr-5 mt-5 md:w-[150px] font-semibold rounded-lg text-cente bg-primary hover:bg-secundary" target='_blank'>
+               <p className='text-xs md:text-sm' >Baixa CV</p>
                 <Image
                   src={'/mario1.png'}
                   alt="pernagem do mario"
@@ -36,20 +40,25 @@ const SectionUser = () => {
                   height={10}
                   className='hidden md:block'
                 />
-              </button>
-              <button className="flex items-center justify-around pt-2 pb-2 pl-3 pr-3 mt-5 md:w-[150px] font-semibold rounded-lg text-cente bg-primary hover:bg-secundary">
-              <p className='text-sm'>Meu trabalho</p>
-                <Image
-                  src={'/mario2.png'}
-                  alt="pernagem do mario"
-                  width={35}
-                  height={10}
-                  className='hidden md:block'
-                />
-              </button>
+              </a>
+              <ScrollLink  to="methodology"
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-70} 
+                className="flex items-center justify-around pt-2 pb-2 pl-3 pr-3 mt-5 md:w-[150px] font-semibold rounded-lg text-cente bg-primary hover:bg-secundary cursor-pointer">
+                  <p className='text-sm'>Meu trabalho</p>
+                    <Image
+                      src={'/mario2.png'}
+                      alt="pernagem do mario"
+                      width={35}
+                      height={10}
+                      className='hidden md:block'
+                    />
+              </ScrollLink>
             </div>
           </div>
-          <Link href='https://l1nk.dev/bkcpR' className="absolute flex cursor-pointer md:pl-48 md:top-[48rem]" id="link-a">
+          <Link href='https://wa.me/5598987312479?text=Ol%C3%A1+Ruan%2C+fiquei+interessado+em+seus+servi%C3%A7os+ap%C3%B3s+conferir+o+seu+portf%C3%B3lio.+Gostaria+de+saber+quando+voc%C3%AA+est%C3%A1+dispon%C3%ADvel+para+uma+reuni%C3%A3o%3F' className="absolute flex cursor-pointer md:pl-48 md:top-[48rem]" id="link-a" target='_blank'>
             <Image
               src={'/conversa.png'}
               alt="botao whatsapp"

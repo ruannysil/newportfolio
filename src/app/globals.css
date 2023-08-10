@@ -8,6 +8,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  backdround-color: '#000';
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,6 +16,7 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    backdround-color: '#000';
   }
 }
 
@@ -110,10 +112,10 @@ body {
   position: absolute;
 }
 .swiper-pagination-bullet {
-  background-color: #000; /* Defina a cor dos bullets inativos aqui */
+  background-color: #000;
 }
 
-/* Cor do bullet ativo */
+
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #FF4900; 
   font-size: 6rem;
@@ -126,26 +128,25 @@ body {
   position: absolute;
 }
 .swiper-pagination-bullet {
-  background-color: #000; /* Defina a cor dos bullets inativos aqui */
+  background-color: #000;
 }
 
-/* Cor do bullet ativo */
+
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #FF4900; 
   font-size: 6rem;
 }
 
 
-/* Estilo para o cartão ativo (do meio) */
 .swiper-slide.swiper-slide-active {
-  transform: scale(1); /* Redimensiona o cartão ativo para o tamanho original */
-  filter: brightness(1) blur(0); /* Remove o desfoque e mantém o brilho normal */
+  transform: scale(1); 
+  filter: brightness(1) blur(0); 
 }
 
-/* Estilo para os cartões à esquerda e à direita */
+
 .swiper-slide:not(.swiper-slide-active) {
-  transform: scale(0.8); /* Redimensiona os cartões à esquerda e à direita */
-  filter: brightness(0.7) blur(2px); /* Aplica desfoque e reduz o brilho */
+  transform: scale(0.8); 
+  filter: brightness(0.7) blur(2px);
 }
 
 .swiper {
